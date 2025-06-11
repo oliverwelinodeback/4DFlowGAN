@@ -25,7 +25,7 @@ if __name__ == "__main__":
         model_file = 'GAN-WGAN-epoch100.h5'
 
     # Hyperparameters optimisation variables
-    initial_learning_rate = 1e-4
+    learning_rate = 1e-4
     epochs = 200
     batch_size = 20
     mask_threshold = 0.5
@@ -66,8 +66,8 @@ if __name__ == "__main__":
     testset = None
 
     # ------- Main Network ------
-    print(f"4DFlowGAN Patch {patch_size}, lr {initial_learning_rate}, batch {batch_size}")
-    network = TrainerController(patch_size, res_increase, initial_learning_rate, QUICKSAVE, folder, network_name, low_resblock, hi_resblock, epochs_before_disc, adversarial)
+    print(f"4DFlowGAN Patch {patch_size}, lr {learning_rate}, batch {batch_size}")
+    network = TrainerController(patch_size, res_increase, learning_rate, QUICKSAVE, folder, network_name, low_resblock, hi_resblock, epochs_before_disc, adversarial)
     network.init_model_dir(GAN_module_name)
 
     print(network.model.summary())
