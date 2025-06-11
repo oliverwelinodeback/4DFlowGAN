@@ -78,14 +78,12 @@ These weights can be used directly for inference or evaluation.
 
 ## Example dataset
 
-For testing the workflow, an example toy dataset is provided `/data/example_data_HR.h5` with its corresponding dual-venc downsampled LR counterpart `/data/example_data_HR.h5`, consisting of one timestep a simple CFD simulation of the main arteries sorrounding the circle-of-willis. Furthermore, prepared HR-LR patch csv files is available in `/data/train.csv` and `/data/validate.csv`.
-
 An example toy dataset is provided to demonstrate the workflow:
 - High-resolution CFD simulation: `/data/example_data_HR.h5`
 - Corresponding dual-venc downsampled low-resolution data: `/data/example_data_LR.h5`
 - Pre-generated HR-LR patch csv files: `/data/train.csv` and `/data/validate.csv`
 
-The dataset consists of one time frame, allowing for demonstration of the complete workflow on a small synthetic set intended for testing and illustration purposes.
+The dataset consists of one time frame from a synthetic CFD simulation of the main arteries surrounding the circle of Willis. It allows demonstration of the complete workflow on a small synthetic set intended for testing purposes.
 
 <!-- ## Citation
 If you use this repository in your research, please cite:
