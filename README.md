@@ -33,15 +33,13 @@ The full data preparation consists of:
     - Set `patch_size`, rotation option, and number of patches per frame.
     - Run the script to generate a CSV file containing patch coordinates.
 
-For questions or further details, contact: `oliver.welin.odeback@ki.se`.
-
 ### Training
 
 To run a training session for 4DFlowGAN:
 
 1. **Open GAN-trainer.py and configure the data_dir and the csv filenames**
 2. **Adjust hyperparameters**
-3. **Run GAN-trainer.py**
+3. **Run** `GAN-trainer.py`
 
 The main adjustable hyperparameters are listed below:
 
@@ -52,7 +50,7 @@ The main adjustable hyperparameters are listed below:
 | learning_rate| Learning rate |
 | restore| Option to restore model from a existing set of training weights |
 | learning_rate| Learning rate |
-| epochs | number of epochs |
+| epochs | Number of epochs |
 | batch_size| Batch size per prediction |
 | folder & network_name | The network folder name. The model will be saved as models/folder/name_timestamp |
 | res_increase | Upsample ratio, adjustable to any integer but must comply with given HR and LR training data |
@@ -62,10 +60,11 @@ The main adjustable hyperparameters are listed below:
 ### Inference
 
 To run predictions:
-    1. Open 'src/GAN-predictor.py' and configure 'input_filename' and 'output_filename'
-    2. Specify the path to trained model weights (in HDF5 format), either from your own trained or provided pre-trained models.
-    3. Run the prediction script 'GAN-predictor.py'
-    4. To evaluate prediction performance, run 'performance_metrics.py' or 'performance_visualization.py'. Provide the generated super-resolved file and the corresponding reference HR file to compute metrics (vNRMSE, MAE, generate regression plots etc.). 
+
+1. **Open** `src/GAN-predictor.py` **and configure** `input_filename` **and** `output_filename`
+2. **Specify the path to trained model weights (in HDF5 format), either from your own trained or provided pre-trained models.**
+3. **Run the prediction script** `GAN-predictor.py`
+4. **To evaluate prediction performance, run** `performance_metrics.py` **or** `performance_visualization.py` **. Provide the generated super-resolved file and the corresponding reference HR file to compute metrics (vNRMSE, MAE, generate regression plots etc.).**
 
 ## Pre-trained weights
 
@@ -79,28 +78,20 @@ These weights can be used directly for inference or evaluation.
 
 ## Example dataset
 
-For testing the workflow, an example toy dataset is provided '/data/example_data_HR.h5' with its corresponding dual-venc downsampled LR counterpart '/data/example_data_HR.h5', consisting of one timestep a simple CFD simulation of the main arteries sorrounding the circle-of-willis. Furthermore, prepared HR-LR patch csv files is available in '/data/train.csv' and '/data/validate.csv'.
+For testing the workflow, an example toy dataset is provided `/data/example_data_HR.h5` with its corresponding dual-venc downsampled LR counterpart `/data/example_data_HR.h5`, consisting of one timestep a simple CFD simulation of the main arteries sorrounding the circle-of-willis. Furthermore, prepared HR-LR patch csv files is available in `/data/train.csv` and `/data/validate.csv`.
 
 An example toy dataset is provided to demonstrate the workflow:
-- High-resolution CFD simulation: '/data/example_data_HR.h5'
-- Corresponding dual-venc downsampled low-resolution data: '/data/example_data_LR.h5'
-- Pre-generated HR-LR patch csv files: '/data/train.csv' and '/data/validate.csv'
+- High-resolution CFD simulation: `/data/example_data_HR.h5`
+- Corresponding dual-venc downsampled low-resolution data: `/data/example_data_LR.h5`
+- Pre-generated HR-LR patch csv files: `/data/train.csv` and `/data/validate.csv`
 
-The dataset consists of one time frame from a synthetic CFD simulation of the main arteries surrounding the circle of Willis. It allows demonstration of the complete workflow on a small synthetic set intended for testing and illustration purposes.
+The dataset consists of one time frame, allowing for demonstration of the complete workflow on a small synthetic set intended for testing and illustration purposes.
 
-## Citation
+<!-- ## Citation
 If you use this repository in your research, please cite:
 
-O. Welin Odeback et al.
-
-Potential and Challenges of Generative Adversarial Networks for Super-Resolution 4D Flow MRI.
+O. Welin Odeback et al. Potential and Challenges of Generative Adversarial Networks for Super-Resolution 4D Flow MRI. Fill in! -->
 
 ## Contact
-For questions or feedback, please contact:
-
-Oliver Welin Odeback
-
-Karolinska Institutet
-
-oliver.welin.odeback@ki.se
+For questions or further details, please contact me at `oliver.welin.odeback@ki.se`.
 
