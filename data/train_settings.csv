@@ -1,0 +1,7 @@
+Metric,Value
+patch_size,12
+n_patch,20
+n_empty_patch_allowed,1
+all_rotation,True
+mask_threshold,0.5
+minimum_coverage,0.05
