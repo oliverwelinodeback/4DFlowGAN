@@ -1,6 +1,6 @@
 # Generative Adversarial Networks for Super-Resolution 4D Flow MRI
 
-This repository provides the implementation and trained models accompanying the manuscript:  **"Potential and challenges of generative adversarial networks for super-resolution of intracranial 4D Flow MRI"**.  
+This repository provides the implementation and trained models accompanying the manuscript:  **"Potential and challenges of generative adversarial networks for super-resolution in 4D Flow MRI"**.  
 
 In this study, we investigate the use of GANs for denoising and super-resolving 4D Flow MRI data. We introduce a dedicated GAN architecture for velocity field super-resolution and conduct a systematic evaluation of three commonly used adversarial loss formulations - Vanilla, Relativistic, and Wasserstein - trained and validated on synthetic 4D Flow MRI data generated from patient-specific cerebrovascular in-silico models.
 
@@ -88,7 +88,7 @@ The dataset consists of one time frame from a synthetic CFD simulation of the ma
 <!-- ## Citation
 If you use this repository in your research, please cite:
 
-O. Welin Odeback et al. Potential and Challenges of Generative Adversarial Networks for Super-Resolution 4D Flow MRI. Fill in! -->
+O. Welin Odeback et al. Potential and Challenges of Generative Adversarial Networks for Super-Resolution in 4D Flow MRI. Fill in! -->
 
 ## Contact
 For questions or further details, please contact me at `oliver.welin.odeback@ki.se`.
